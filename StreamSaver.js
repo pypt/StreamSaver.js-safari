@@ -109,6 +109,7 @@
     mc.port1.close()
     mc.port2.close()
     supportsTransferable = true
+    console.log(`Supports transferable`);
     // Freeze TransformStream object (can only work with native)
     Object.defineProperty(streamSaver, 'TransformStream', {
       configurable: false,
