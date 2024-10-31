@@ -24,6 +24,8 @@
     ? 'iframe'
     : 'navigate'
 
+  console.log(`Download strategy: ${downloadStrategy}`);
+
   const streamSaver = {
     createWriteStream,
     WritableStream: global.WritableStream || ponyfill.WritableStream,
